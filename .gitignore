@@ -4,4 +4,6 @@ __pycache__/
 .idea/
 .vscode/
 *.db
-.pytest_*ache/
+.pytest_cache/
+node_modules/
+dist/

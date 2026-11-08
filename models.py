@@ -23,3 +23,6 @@ class UpdateZadanie(BaseModel):
     )
 
     wykonane: bool
+
+class ZadaniePatch(BaseModel):
+    wykonane: bool

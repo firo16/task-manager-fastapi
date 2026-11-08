@@ -178,7 +178,16 @@ def usun_zadanie(zadanie_id):
 
     return kursor.rowcount
 
+def zmien_status_zadania(zadanie_id,wykonane):
+    with sqlite3.connect(NAZWA_BAZY) as polaczenie:
+        kursor = polaczenie.cursor()
 
+        kursor.execute('''UPDATE tasks 
+        SET wykonane = ?
+        WHERE id = ?''',
+                       (int(wykonane),zadanie_id))
+
+        return kursor.rowcount
 
 
 
