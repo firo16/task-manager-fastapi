@@ -2,11 +2,44 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f1f5f9;
-  color: #0f172a;
+
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      #173b68 0%,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      #153b52 0%,
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #020617,
+      #0d192c
+    );
+
+  background-attachment: fixed;
+  color: #f8fafc;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }

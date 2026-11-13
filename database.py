@@ -194,3 +194,4 @@ def zmien_status_zadania(zadanie_id,wykonane):
 
 utworz_baze()
 
+
